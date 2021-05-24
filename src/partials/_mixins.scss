@@ -1,0 +1,97 @@
+@mixin list_horizontal {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin list_reset {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  @include list_horizontal;
+}
+
+@mixin default_btn {
+  text-decoration: none;
+  transition: color $transition_duration;
+}
+@mixin nav_btn {
+  color: $colorfont;
+
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+@mixin btngooglenav {
+  color: $colorbtngoogle;
+  text-decoration: none;
+  transition: color $transition_duration;
+  border: solid 1px $colorbtngoogle;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  .googlelogo_box{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+
+@mixin signup_btnlogo {
+  font-size: $fontsmall;
+  .buttons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    a{
+      padding: 5px 10px;
+      font-weight: $fontbold;
+      &.btnlogo{
+        color: $bgwhite;
+        background-color: $colorbtngoogle;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color $transition_duration;
+        border: solid 1px $colorbtngoogle;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        .googlelogo_box{
+          width: 15px;
+          height: 15px;
+          margin-right: 3px;
+        }
+        &:hover {
+          color: $colorbtngoogle;
+          background-color: $bgbtngoogle;
+        }
+      }
+    }
+    span{
+      font-size: $fontsmall;
+      margin: 0 4px;
+    }
+  }
+}
+
+@mixin learnmore{
+  color: $colorfontblue;
+  margin: 30px 0;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+
+@mixin imgfit{
+  img{
+      max-width: 100%;
+      height: auto;
+  }
+}
+  

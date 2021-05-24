@@ -1,0 +1,41 @@
+header{
+    color: $fontwhite;
+    .backgroundimg{
+        position: relative;
+        background-image: url("/img/theme_slider2_bg-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-width: 1000px;
+        .salmonlayer{
+            background-color: $bgsalmon;
+            opacity: 0.9;
+            nav{
+                padding: 50px 50px;
+                display: flex;
+                align-items: center;
+                .nav-logo{
+                    flex: 1;
+                    .img-box{
+                        width: 300px;
+                    }
+                }
+                .nav-link{
+                    ul{
+                        li{
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .abs_wave{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .hero{
+        height: 500px;
+    }
+}

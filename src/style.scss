@@ -1,0 +1,14 @@
+/* File generici che servono per tutto il sito */
+@import "partials/_palette";
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/commons";
+
+
+/* File specifici per varie sezioni del mio sito */
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+// elementi
+@import "partials/_buttons";

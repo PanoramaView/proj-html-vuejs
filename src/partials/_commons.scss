@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font_primary;
+    font-size: $font_size;
+    color: $fontdarkgreyblue;
+    background-color: $bgwhite;
+}
+.margin_page{
+    margin: 0 150px;
+    @media screen and (min-width: 1500px) {
+      margin: auto;
+      max-width: 1200px;
+    }
+}
+.caption{
+    font-family: $font_secondary;
+}
+
+ul{
+    @include list_reset;
+    a{
+        color: $fontwhite;
+    }
+}
+
+body{
+    @media screen and (min-width: 1500px) {
+      margin: auto;
+      max-width: 1500px;
+    }
+}
+h1{
+    font-weight: $fontboldh1;
+    font-size: $font_sizeh1;
+    line-height: 1.6;
+}
+h2{
+  font-weight: $fontboldh1;
+  font-size: $font_sizeh2;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.img-box{
+    @include imgfit;
+}
+  
