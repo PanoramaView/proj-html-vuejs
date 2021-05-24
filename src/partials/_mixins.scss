@@ -11,19 +11,33 @@
   @include list_horizontal;
 }
 
+@mixin imgfit{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    i{
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@mixin flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+//da modificare
 @mixin default_btn {
   text-decoration: none;
   transition: color $transition_duration;
 }
-@mixin nav_btn {
-  color: $colorfont;
 
-  &:hover {
-    color: $bgbtngoogle;
-    background-color: $colorbtngoogle;
-  }
-}
-@mixin btngooglenav {
+@mixin btnviewcourses {
   color: $colorbtngoogle;
   text-decoration: none;
   transition: color $transition_duration;
@@ -42,43 +56,6 @@
   }
 }
 
-@mixin signup_btnlogo {
-  font-size: $fontsmall;
-  .buttons{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    a{
-      padding: 5px 10px;
-      font-weight: $fontbold;
-      &.btnlogo{
-        color: $bgwhite;
-        background-color: $colorbtngoogle;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color $transition_duration;
-        border: solid 1px $colorbtngoogle;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        .googlelogo_box{
-          width: 15px;
-          height: 15px;
-          margin-right: 3px;
-        }
-        &:hover {
-          color: $colorbtngoogle;
-          background-color: $bgbtngoogle;
-        }
-      }
-    }
-    span{
-      font-size: $fontsmall;
-      margin: 0 4px;
-    }
-  }
-}
-
 @mixin learnmore{
   color: $colorfontblue;
   margin: 30px 0;
@@ -86,12 +63,3 @@
     opacity: 0.7;
   }
 }
-
-
-@mixin imgfit{
-  img{
-      max-width: 100%;
-      height: auto;
-  }
-}
-  

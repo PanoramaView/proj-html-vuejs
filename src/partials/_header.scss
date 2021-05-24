@@ -40,5 +40,8 @@ header{
     }
     .hero{
         height: 500px;
+        .flexc{
+            @include flexcolcenter;
+        }
     }
 }

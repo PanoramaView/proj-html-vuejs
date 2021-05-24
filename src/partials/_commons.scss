@@ -16,8 +16,12 @@ body {
       max-width: 1200px;
     }
 }
-.caption{
+.undertitles{
     font-family: $font_secondary;
+}
+.flex{
+    display: flex;
+    align-content: center
 }
 
 ul{
@@ -34,18 +38,17 @@ body{
     }
 }
 h1{
-    font-weight: $fontboldh1;
+    font-weight: lighter;
     font-size: $font_sizeh1;
     line-height: 1.6;
 }
 h2{
-  font-weight: $fontboldh1;
-  font-size: $font_sizeh2;
-  line-height: 1.6;
-  margin-bottom: 40px;
+    font-weight: lighter;
+    font-size: $font_sizeh2;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 .img-box{
     @include imgfit;
 }
-  
