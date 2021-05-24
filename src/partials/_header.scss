@@ -8,22 +8,25 @@ header{
         background-repeat: no-repeat;
         min-width: 1000px;
         .salmonlayer{
-            background-color: $bgsalmon;
-            opacity: 0.9;
+            background-color: $bgsalmonop;
             nav{
+                opacity: 1;
                 padding: 50px 50px;
                 display: flex;
                 align-items: center;
                 .nav-logo{
                     flex: 1;
                     .img-box{
-                        width: 300px;
+                        width: 220px;
                     }
                 }
                 .nav-link{
                     ul{
+                        display: flex;
+                        align-items: center;
                         li{
-                            margin: 0 20px;
+                            margin: 0 10px;
+                            font-weight: 100px;
                         }
                     }
                 }
