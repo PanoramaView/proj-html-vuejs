@@ -1,119 +1,301 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">
-        <!-- FRAMEWORK -->
-        <link rel="stylesheet" href="framework.css">
-        <!-- https://fontawesome.com/v4.7.0/icons/ -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- MyCSS -->
-        <link rel="stylesheet" href="/scripts/style.css">
-        
-        <!-- Vue JS -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-        <!-- JSON -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <!-- SASS Laravel Mix -->
-        <link rel="stylesheet" href="dist/style.css">
-        
-        <title>Edu Project</title>
-        
-    </head>
-    <body>
-        <div id="app_vue">
-            <header>
-                <div class="backgroundimg">
-                    <div class="salmonlayer">
-                        <nav>
-                            <div class="nav-logo">
-                                <div class="img-box">
-                                    <img src="img/theme_eduprime_logo.png">
-                                </div>
+    <!-- FRAMEWORK -->
+    <link rel="stylesheet" href="framework.css">
+    <!-- https://fontawesome.com/v4.7.0/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="/scripts/style.css">
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- JSON -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- SASS Laravel Mix -->
+    <link rel="stylesheet" href="dist/style.css">
+
+    <title>Edu Project</title>
+
+</head>
+
+<body>
+    <div id="app_vue">
+        <header>
+            <div class="backgroundimg">
+                <div class="salmonlayer">
+                    <nav>
+                        <div class="nav-logo">
+                            <div class="img-box">
+                                <img src="img/theme_eduprime_logo.png">
                             </div>
-                            <div class="nav-link">
-                                <ul>
-                                    <li><a href="#">Home </a> </li>
-                                    <li><a href="#">Courses </a> </li>
-                                    <li><a href="#">About Us </a> </li>
-                                    <li><a href="#">News </a> </li>
-                                    <li><a href="#">Pages </a> </li>
-                                    <li><a href="#">Contact </a> </li>
-                                    <li><a href="#">Purchase </a> </li>
-                                    <li ><a href="#" class="yellow yellownav btnlogo">VIEW COURSES </a> </li>
-            
-                                </ul>
+                        </div>
+                        <div class="nav-link">
+                            <ul>
+                                <li><a href="#">Home </a> </li>
+                                <li><a href="#">Courses </a> </li>
+                                <li><a href="#">About Us </a> </li>
+                                <li><a href="#">News </a> </li>
+                                <li><a href="#">Pages </a> </li>
+                                <li><a href="#">Contact </a> </li>
+                                <li><a href="#">Purchase </a> </li>
+                                <li><a href="#" class="yellow yellownav btnlogo">VIEW COURSES </a> </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="hero">
+                        <div class="flexc">
+                            <h1>Key to your success</h1>
+                            <div class="undertitles">
+                                EduPrime is the most versatile WordPress theme for educational purposes, showcasing
+                                universities, courses, secondary schools etc.
                             </div>
-                        </nav>
-                        <div class="hero">
-                            <div class="flexc">
-                                <h1>Key to your success</h1>
-                                <div class="undertitles">
-                                    EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.
-                                </div>
-                                <div class="buttons flex">
-                                    <a class="yellow btnlogo" href="#" role="button">
-                                        <div class="logo_box">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </div>
-                                        Search courses
-                                    </a>
-                                    <a class="white btnlogo" href="#" role="button">
-                                        <div class="logo_box">
-                                            <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                        </div>
-                                        Apply for university
-                                    </a>
-                                </div>
+                            <div class="buttons flex">
+                                <a class="yellow btnlogo" href="#" role="button">
+                                    <div class="logo_box">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    Search courses
+                                </a>
+                                <a class="white btnlogo" href="#" role="button">
+                                    <div class="logo_box">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    </div>
+                                    Apply for university
+                                </a>
                             </div>
-                            <div class="abs_side"></div>
-                        </div> 
+                        </div>
+                        <div class="abs_side"></div>
                     </div>
-                    <div class="abs_wavebot">
-                        <div class="img-box">
-                            <img src="img/Wave-1.png">
+                </div>
+                <div class="abs_wavebot">
+                    <div class="img-box">
+                        <img src="img/Wave-1.png">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="bgwhite">
+                <div class="margin_page">
+                    <div class="flex">
+                        <div class="descr col-6">
+                            <h2>Thousands of courses for any type of student</h2>
+                            <div class="undertitles">
+                                At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can
+                                find a course that satisfies your needs within a click away and applies for a course in
+                                a matter of minutes. EduPrime is ranked as the most versatile university in the world,
+                                thanks to the number of courses it provides.
+                            </div>
+                            <div class="buttons flex">
+                                <a class="yellow btnlogo" href="#" role="button">
+                                    Browse through courses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="big-img col-6">
+                            <div class="img-box">
+                                <img src="img/Graduation-Illustration.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flexc">
+                        <h2>Faculties available at EduPrime</h2>
+                        <div class="undertitles text-center">
+                            A single university with a load of courses, tailored <br>
+                            to satisfy any student's needs.
+                        </div>
+                        <div class="faculties flex">
+                            <div class="faculty-box activefaculties">
+                                <div class="img-box">
+                                    <img src="img/Gavel-v2.png" alt="">
+                                </div>
+                                <span>Law Faculty</span>
+                            </div>
+                            <div class="faculty-box">
+                                <div class="img-box">
+                                    <img src="img/Coins-tabs-v2.png" alt="">
+                                </div>
+                                <span>Economy</span>
+                            </div>
+                            <div class="faculty-box">
+                                <div class="img-box">
+                                    <img src="img/Medicine-tabs-v2.png" alt="">
+                                </div>
+                                <span>Medicine</span>
+                            </div>
+                            <div class="faculty-box">
+                                <div class="img-box">
+                                    <img src="img/Computer-tabs-v2.png" alt="">
+                                </div>
+                                <span>Computer Science</span>
+                            </div>
+                            <div class="faculty-box">
+                                <div class="img-box">
+                                    <img src="img/Palette-tabs-v2.png" alt="">
+                                </div>
+                                <span>Graphic Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex faculty_tab">
+                        <div class="big-img col-6">
+                            <div class="img-box">
+                                <img src="img/Gavel-Illustration-e1556884768193.png" alt="">
+                            </div>
+                        </div>
+                        <div class="descr col-6">
+                            <h2>Law Faculty</h2>
+                            <div class="undertitles">
+                                Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
+                            </div>
+                            <div class="buttons flex">
+                                <a class="salmon btnlogo" href="#" role="button">
+                                    Read More
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </header>
-
-            <main>
-                <section class="bgwhite">
-                    <div class="margin_page">
-                        <div class="flex">
-
-                            <div class="descr col-6">
-                                <h2>Thousands of courses for any type of student</h2>
-                                <div class="undertitles">
-                                    At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.
+                <div class="abs_wavebot">
+                    <div class="img-box">
+                        <img src="img/svg/svg-0.svg">
+                    </div>
+                </div>
+            </section>
+            <section class="bgsalmon">
+                <div class="margin_page">
+                    <!-- University Year -->
+                    <div class="flexc timeline_section reuseflexc">
+                        <div class="img-box overtitleimg">
+                            <img src="img/Clock-and-Bell.png" alt="">
+                        </div>
+                        <h2 class="redtext">University Year</h2>
+                        <div class="timeline">
+                            <div class="up">
+                                <div class="flex">
+                                    <div class="timeline_descr flexc">
+                                        <h3>Demo Classes</h3>
+                                        <div class="undertitles">In the first week, students try to accommodate with the teaching style and choose their optimal courses.</div>
+                                    </div>
+                                    <div class="timeline_descr flexc">
+                                        <h3>Graduation Day</h3>
+                                        <div class="undertitles">On the day of the graduation, all students father for the ceremony and then network and party among others.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="img/Timeline-Item.png" alt="">
+                            </div>
+                            <div class="down">
+                                <div class="flex">
+                                    <div class="timeline_descr flexc">
+                                        <h3>Orientation</h3>
+                                        <div class="undertitles">First day of the university year, all students gather for the opening ceremony and then network with others.</div>
+                                    </div>
+                                    <div class="timeline_descr flexc">
+                                        <h3>Evaluation</h3>
+                                        <div class="undertitles">At the end of a semester, students take a general evaluation test for every subject they're learning.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Upcoming Events -->
+                    <div class="flexc upcoming_events reuseflexc">
+                        <div class="img-box overtitleimg">
+                            <img src="img/upcoming-events-calendar-icon.png" alt="">
+                        </div>
+                        <h2>Upcoming Events</h2>
+                        <div class="events_list flex">
+                            <div class="col-4 event">
+                                <div class="flexc">
+                                    <h4>Coaching Sessions</h4>
+                                    <div class="event_date undertitles">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        20 May 21:30 PM
+                                    </div>
+                                    <div class="event_descr undertitles">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                    </div>
                                 </div>
                                 <div class="buttons flex">
-                                    <a class="yellow btnlogo" href="#" role="button">
-                                        Browse through courses
+                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                        <div class="logo_box">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </div>
+                                        Find More
                                     </a>
                                 </div>
                             </div>
-                            <div class="bigimg col-6">
-                                <div class="img-box">
-                                    <img src="img/Graduation-Illustration.png" alt="">
+                            <div class="col-4 event">
+                                <div class="flexc">
+                                    <h4>Coaching Sessions</h4>
+                                    <div class="event_date undertitles">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        24 Mar 18:00 PM
+                                    </div>
+                                    <div class="event_descr undertitles">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                    </div>
+                                </div>
+                                <div class="buttons flex">
+                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                        <div class="logo_box">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </div>
+                                        Find More
+                                    </a>
                                 </div>
                             </div>
-
+                            <div class="col-4 event">
+                                <div class="flexc">
+                                    <h4>Coaching Sessions</h4>
+                                    <div class="event_date undertitles">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        12 Feb 13:30 PM
+                                    </div>
+                                    <div class="event_descr undertitles">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                    </div>
+                                </div>
+                                <div class="buttons flex">
+                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                        <div class="logo_box">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </div>
+                                        Find More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="yellow btnlogo" href="#" role="button">
+                                View All Events
+                            </a>
                         </div>
                     </div>
-                </section>
-                <section class="bgsalmon"></section>
-                <section class="bgwhite"></section>
-                <section class="bgsalmon"></section>
-                <section class="bgwhite"></section>
-            </main>
-            <footer>
+                </div>
+            </section>
+            <section class="bgwhite"></section>
+            <section class="bgsalmon"></section>
+            <section class="bgwhite"></section>
+        </main>
+        <footer>
 
-            </footer>
-        </div>
-        <!-- My JS -->
-        <script src="scripts/myscripts.js"></script>
-    </body>
+        </footer>
+    </div>
+    <!-- My JS -->
+    <script src="scripts/myscripts.js"></script>
+</body>
+
 </html>

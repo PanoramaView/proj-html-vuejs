@@ -3,13 +3,17 @@ $colorfontblue: #3E5097;
 $font_primary: 'Fredoka One', cursive;
 $font_secondary:'Open Sans', sans-serif;
 
-$font_size: 14;
+$font_size: 12;
+//$font_sizemap: ("regular": 12, "uthero": 16, "h1": 48, "h2": 38, "h3": 16);
+// map.get($font_sizemap, "regular");
 $font_sizeuthero: 16;
 $font_sizeutmain: 12;
 $font_sizebtn: 12;
 
 $font_sizeh1: 48;
 $font_sizeh2: 38;
+$font_sizeh3: 16;
+$font_sizeh4: 22;
 
 $line_height: 1.8;
 $fontbold: 800;
@@ -17,14 +21,9 @@ $fontboldh1: 900;
 $fontboldh2: 700;
 $fontsmall: 12;
  
+$timeline_descr_margin: 200px;
 
-//btn
-$colorbtn: #2E4790;
-$bgbtngoogle: white;
-$colorbtngoogle: #3D58AA;
 
-$spacing: 20px;
-$separator_color: rgba(0, 0, 0, 0.2);
 $transition_duration: 0.25s;
 
 

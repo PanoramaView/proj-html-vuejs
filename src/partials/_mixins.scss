@@ -29,14 +29,11 @@
     align-items: center;
 }
 
-
-
 //da modificare
 @mixin default_btn {
   text-decoration: none;
   transition: color $transition_duration;
 }
-
 
 
 @mixin learnmore{
@@ -46,3 +43,4 @@
     opacity: 0.7;
   }
 }
+

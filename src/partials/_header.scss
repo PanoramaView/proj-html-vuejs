@@ -2,7 +2,7 @@ header{
     color: $fontwhite;
     .backgroundimg{
         position: relative;
-        background-image: url("/img/theme_slider2_bg-1.jpg");
+        background-image: url("../../img/theme_slider2_bg-1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -23,10 +23,22 @@ header{
                 .nav-link{
                     ul{
                         display: flex;
-                        align-items: center;
                         li{
-                            margin: 0 10px;
                             font-weight: 100px;
+                            display: flex;
+                            justify-self: center;
+                            justify-content: center;
+                            align-items: center;
+                            a:not(.yellownav){
+                                padding: 10px 20px;
+                                &:hover {
+                                    color: $fontsalmon;
+                                    background-color: $bgwhite;
+                                  }
+                                  &.activepage{
+                                      color: $fontyellow;
+                                  }
+                            }
                         }
                     }
                 }
@@ -51,5 +63,9 @@ header{
                 }
             }
         }
+    }
+    .abs_wavebot{
+        width: 120%;
+        left: -150px;
     }
 }

@@ -9,7 +9,50 @@ body {
     color: $fontdarkgreyblue;
     background-color: $bgwhite;
     line-height: $line_height;
+    overflow-x: hidden;
 }
+
+ul{
+    @include list_reset;
+    a{
+        color: $fontwhite;
+    }
+}
+
+body{
+    @media screen and (min-width: 1500px) {
+        margin: auto;
+        max-width: 1500px;
+    }
+}
+h1{
+    font-weight: lighter;
+    font-size: $font_sizeh1;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+h2{
+    font-weight: lighter;
+    font-size: $font_sizeh2;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+h3{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh3;
+}
+h4{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh4;
+}
+h5{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_size;
+}
+
 .margin_page{
     margin: 0 200px;
     @media screen and (min-width: 1500px) {
@@ -25,39 +68,11 @@ body {
     display: flex;
     align-content: center
 }
-
-ul{
-    @include list_reset;
-    a{
-        color: $fontwhite;
-    }
-}
-
-body{
-    @media screen and (min-width: 1500px) {
-      margin: auto;
-      max-width: 1500px;
-    }
-}
-h1{
-    font-weight: lighter;
-    font-size: $font_sizeh1;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-h2{
-    font-weight: lighter;
-    font-size: $font_sizeh2;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
 .img-box{
     @include imgfit;
 }
 
 .abs_wavebot{
-    width: 100%;
     position: absolute;
     bottom: 0;
 }
@@ -65,6 +80,10 @@ h2{
 @for $i from 1 through 12 {
     .col-#{$i} {
         width: 5* $i;
-        width: calc((100%/12) * #{$i})
+        width: calc((100%/12) * #{$i});
+        max-width: calc((100%/12) * #{$i});
     }
+}
+.text-center{
+    text-align: center;
 }

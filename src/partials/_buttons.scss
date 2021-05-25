@@ -2,13 +2,16 @@
 a,
 button {
   @include default_btn;
+  
   &.btnlogo{
+    
     font-size: $font_sizebtn;
     padding: 18px 40px;
     transition: color $transition_duration;
     border-radius: 30px;
     display: flex;
     align-items: center;
+
     &:hover{
       -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.15); 
         box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.15);
@@ -16,25 +19,31 @@ button {
 
     //YELLOW BTN
     &.yellow{
-      color: $fcolorwhite;
+      color: $fontwhite;
       background-color: $bgyellow;
+
       .icon_box{
         width: 15px;
         height: 15px;
         margin-right: 3px;
       }
+
       &.yellownav{
+
         &:hover{
           // "VIEW COURSES" btn
-          color: $fcolorsalmon;
+          color: $fontsalmon;
           background-color: $bgwhite;
         }
       }
+
       &:hover {
         // "View All Events" btn
         background-color: $bgsalmon;
       }
+
       &.btn_browse{
+
         &:hover{
           // "Browse though courses" btn
           background-color: $hoverbrowsebgcolor;
@@ -44,25 +53,44 @@ button {
 
     //WHITE BTN
     &.white{
-      color: $fcolorsalmon;
+      color: $fontsalmon;
       background-color: $bgwhite;
+
       &:hover{
         // "Apply for university" btn
-        color: $fcolorwhite;
+        color: $fontwhite;
         background-color: $bgyellow;
       }
     }
+
     //SALMON BTN
     &.salmon{
-      color: $fcolorwhite;
+      color: $fontwhite;
       background-color: $bgsalmon;
+
       &:hover{
         //"list of Fees" btn
         background-color: $bgyellow;
       }
     }
+
     .logo_box{
       margin-right: 8px;
     }
+  }
+}
+
+
+a,
+button {
+  @include default_btn;
+  &.btnlogoevent{
+    
+    font-size: $font_sizebtn;
+    padding: 18px 40px;
+    transition: color $transition_duration;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
   }
 }

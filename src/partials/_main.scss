@@ -1,6 +1,138 @@
-.bgwhite{
-    color: $fontdarkgreyblue;
+main{
+    //main common styles
+    section{
+        position: relative;
+        padding: 100px 0;
+        .abs_wavebot{
+            width: 200%;
+        }
+    }
+    .bgwhite{
+        color: $fontdarkgreyblue;
+    }
+    .bgsalmon{
+        background-color: $bgsalmon;
+        color: $fontwhite;
+    }
+    .buttons{
+        padding: 35px 0;
+    }
+
+    //dedicated
+    .flex{
+        .descr{
+            padding: 0 20px;
+        }
+        .big-img{
+            padding: 50px ;
+            height: 350px;
+            width: 465px;
+            min-height: 350px;
+            min-width: 465px;
+        }
+    }
+    .flexc{
+        @include flexcolcenter;
+        margin-bottom: 50px;
+
+        .faculties{
+            width: 100%;
+            margin: 20px 0;
+            .faculty-box{
+                @include flexcolcenter;
+                width: calc(100%/5);
+                color: $fontsalmon;
+                padding: 20px 0;
+
+                &.activefaculties{
+                    border: 1px solid $bcolorsalmon;
+                    color: $fontwhite;
+                    background-color: $bgsalmon;
+                    img{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+
+                .img-box{
+                    width: 100px;
+                    padding: 15px;
+                }
+                
+            }
+        }
+    }
+    .faculty_tab{
+        .big-img{
+            padding: 0 85px;
+        }
+    }
 }
-.bgsalmon{
-    background-color: $bgsalmon;
+.reuseflexc{
+
+    .img-box{
+        &.overtitleimg{
+            width: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    .redtext{
+        background-color: $hoverbrowsebgcolor;
+    }
+
+    .timeline{
+        text-align: center;
+        .up{
+            margin-left: $timeline_descr_margin;
+        }
+        .down{
+            margin-right: $timeline_descr_margin;
+        }
+        .timeline_descr{
+            margin: 0;
+            padding: 30px;
+            
+            .undertitles{
+                color: $fontwhiteop;
+            }
+        }
+    }
+}
+
+.upcoming_events{
+    .flexc{
+        margin: 0;
+    }
+    .event{
+        position: relative;
+        margin: 15px;
+        background-color: $bgwhite;
+        border-radius: 10px;
+        padding: 25px;
+        h4{
+            color: $fontdarkgrey;
+        }
+        .undertitles{
+            color: $fontgreyblue2;
+            &.event_date{
+                font-size: 10px;
+            }
+        }
+        .event_descr {
+            height: 40px;
+            width: 240px;
+            position: relative;
+            overflow: hidden;
+            padding-right: 0; /* space for ellipsis */
+        }
+        .event_descr::before {
+            position: absolute;
+            content: "[...]";
+            inset-block-end: -3px; /* "bottom" */
+            inset-inline-end: 9px; /* "right" */
+        }
+        .buttons{
+            position: absolute;
+            bottom: 0;
+        }
+    }
 }
