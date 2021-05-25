@@ -11,7 +11,7 @@ header{
             background-color: $bgsalmonop;
             nav{
                 opacity: 1;
-                padding: 50px 50px;
+                padding: 40px;
                 display: flex;
                 align-items: center;
                 .nav-logo{
@@ -32,16 +32,24 @@ header{
                 }
             }
         }
-        .abs_wave{
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-        }
     }
     .hero{
-        height: 500px;
+        height: 450px;
+        max-width: 600px;
+        margin: 30px auto;
         .flexc{
+            .undertitles{
+                color: $fontwhiteop;
+                font-size: $font_sizeuthero;
+            }
             @include flexcolcenter;
+            text-align: center;
+            .buttons{
+                padding: 50px 0;
+                .yellow{
+                    margin: 0 30px;
+                }
+            }
         }
     }
 }

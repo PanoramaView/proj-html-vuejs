@@ -3,7 +3,8 @@ a,
 button {
   @include default_btn;
   &.btnlogo{
-    padding: 20px 40px;
+    font-size: $font_sizebtn;
+    padding: 18px 40px;
     transition: color $transition_duration;
     border-radius: 30px;
     display: flex;
@@ -59,6 +60,9 @@ button {
         //"list of Fees" btn
         background-color: $bgyellow;
       }
+    }
+    .logo_box{
+      margin-right: 8px;
     }
   }
 }

@@ -8,9 +8,10 @@ body {
     font-size: $font_size;
     color: $fontdarkgreyblue;
     background-color: $bgwhite;
+    line-height: $line_height;
 }
 .margin_page{
-    margin: 0 150px;
+    margin: 0 200px;
     @media screen and (min-width: 1500px) {
       margin: auto;
       max-width: 1200px;
@@ -18,6 +19,7 @@ body {
 }
 .undertitles{
     font-family: $font_secondary;
+    font-size: $font_sizeutmain;
 }
 .flex{
     display: flex;
@@ -41,14 +43,28 @@ h1{
     font-weight: lighter;
     font-size: $font_sizeh1;
     line-height: 1.6;
+    margin-bottom: 25px;
 }
 h2{
     font-weight: lighter;
     font-size: $font_sizeh2;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .img-box{
     @include imgfit;
+}
+
+.abs_wavebot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 5* $i;
+        width: calc((100%/12) * #{$i})
+    }
 }

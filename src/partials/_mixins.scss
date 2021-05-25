@@ -37,24 +37,7 @@
   transition: color $transition_duration;
 }
 
-@mixin btnviewcourses {
-  color: $colorbtngoogle;
-  text-decoration: none;
-  transition: color $transition_duration;
-  border: solid 1px $colorbtngoogle;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  .googlelogo_box{
-    width: 20px;
-    height: 20px;
-    margin-right: 3px;
-  }
-  &:hover {
-    color: $bgbtngoogle;
-    background-color: $colorbtngoogle;
-  }
-}
+
 
 @mixin learnmore{
   color: $colorfontblue;
