@@ -1,5 +1,5 @@
 const app = new Vue({
-    el: "#app_vue",
+    el: "#app",
     data: {
         activeNavlink: {},
         navlinks: [
@@ -26,41 +26,8 @@ const app = new Vue({
             },
         ],
         activeFaculty: {},
-        facultiesList:[
-            {
-                img:'img/Gavel-v2.png',
-                bigimg:'img/Gavel-Illustration-e1556884768193.png',
-                name: 'Law Faculty',
-                descr: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions."
-            },
-            {
-                img:'img/Coins-tabs-v2.png',
-                bigimg:'img/Economy.png',
-                name: 'Economy',
-                descr: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions."
-            },
-            {
-                img:'img/Medicine-tabs-v2.png',
-                bigimg:'img/Medicine.png',
-                name: 'Medicine',
-                descr: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions."
-            },
-            {
-                img:'img/Computer-tabs-v2.png',
-                bigimg:'img/Computer-Science.png',
-                name: 'Computer Science',
-                descr: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions."
-            },
-            {
-                img:'img/Palette-tabs-v2.png',
-                bigimg:'img/Graphic-Design.png',
-                name: 'Graphic Design',
-                descr: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions."
-            },
-        ]
+        facultiesList: globalfacultiesList,
 
-    },
-    computed:{
     },
 
     methods:{
@@ -75,5 +42,6 @@ const app = new Vue({
     mounted(){
         this.selectfaculty(this.facultiesList[0]);
         this.selectnavlink(this.navlinks[0]);
-    }
+        
+    },
 })
