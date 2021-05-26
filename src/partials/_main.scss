@@ -3,6 +3,7 @@ main{
     section{
         position: relative;
         overflow:hidden;
+        padding: 50px 0;
         .abs_wavebot{
             width: 200%;
         }
@@ -76,7 +77,6 @@ main{
 
 
 .section2{
-    padding-bottom: 50px;
     .abs_wavebot{
         transform: translateY(99%);
         bottom: 0;
@@ -199,26 +199,49 @@ main{
 }
 
 .section4{
-    padding: 50px 0;
-}
-.input{
-    position: relative;
-    input{
-        width: 350px;
-        margin-left: 100px;
-        font-size: 12;
-        outline: none;
-    }
-    .logo_box{
-        position: absolute;
-        right: 0;
-        padding: 17px 18px;
-        border-radius: 50%;
-        background-color: $bgyellow;
 
-        i{
-            font-size: 20;
-            color: $fontwhite;
+    .input{
+        position: relative;
+        input{
+            width: 350px;
+            margin-left: 100px;
+            font-size: 12;
+            outline: none;
+        }
+        .logo_box{
+            position: absolute;
+            right: 0;
+            padding: 17px 18px;
+            border-radius: 50%;
+            background-color: $bgyellow;
+    
+            i{
+                font-size: 20;
+                color: $fontwhite;
+            }
+        }
+    }
+}
+.section5{
+    padding-bottom: 200px;
+    .undertitles{
+        width: 400px;
+        text-align: center;
+    }
+    .partners_list{
+        align-items: center;
+        height: 45px;
+        padding: 50px 0;
+        .img-box{
+            transition: color $transition_duration;
+            opacity: .3;
+            padding: 20px;
+            img{
+                max-height: 45px;
+            }
+            &:hover{
+                opacity: 1;
+            }
         }
     }
 }

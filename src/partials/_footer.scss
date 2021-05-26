@@ -1,0 +1,90 @@
+footer{
+    background-color: $bgsalmon;
+    color: $fontwhite;
+    padding: 50px 0;
+    .EduPresentation{
+        .img-box{
+            width: 220px;
+            margin-bottom: 30px;
+        }
+
+
+        
+    }
+    .footer_links{
+        font-family: $font_secondary;
+        ol{
+            margin: 0 20px;
+            list-style: none;
+            text-decoration: none;
+            li{
+                line-height: 2.5;
+            }
+            .liHead{
+                margin-bottom: 15px;
+            }
+            a{
+                color: $fontwhiteop;
+                &:hover{
+
+                }
+            }
+        }
+    }
+    .search_section{
+        .flexc{
+            @include flexcolcenter;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 100%;
+            .input{
+                position: relative;
+                input{
+                    width: 250px;
+                    font-size: 12;
+                    outline: none;
+                }
+                .logo_box{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    padding: 17px;
+                    border-radius: 50%;
+                    background-color: $bgyellow;
+                    
+                    i{
+                        font-size: 16;
+                        color: $fontwhite;
+                    }
+                }
+            }
+
+            .buttons{
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                button{
+                    margin: 5px;
+                    color: $fontwhiteop;
+                    font-size: 8;
+                    padding: 8px 10px;
+                    transition: opacity $transition_duration;
+                    border-radius: 40px;
+                    border: 1px solid $fontwhiteop;
+                    display: flex;
+                    align-items: center;
+                    background-color: transparent;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: white;
+                        color: $fontsalmon;
+                    }
+                }
+            }
+        }
+    }
+    
+    .modeltheme{
+        color: $bgyellow;
+    }
+}

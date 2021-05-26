@@ -107,7 +107,7 @@ button {
 input{
   @include default_btn;
   padding: 18px 20px;
-  transition: color $transition_duration;
+  transition: opacity $transition_duration;
   border-radius: 30px;
   border: none;
   display: flex;
