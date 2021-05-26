@@ -31,16 +31,7 @@
 
 //da modificare
 @mixin default_btn {
+  font-weight: lighter;
   text-decoration: none;
   transition: color $transition_duration;
 }
-
-
-@mixin learnmore{
-  color: $colorfontblue;
-  margin: 30px 0;
-  &:hover{
-    opacity: 0.7;
-  }
-}
-

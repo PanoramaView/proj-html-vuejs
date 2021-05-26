@@ -2,7 +2,7 @@ main{
     //main common styles
     section{
         position: relative;
-        padding: 100px 0;
+        overflow:hidden;
         .abs_wavebot{
             width: 200%;
         }
@@ -13,6 +13,12 @@ main{
     .bgsalmon{
         background-color: $bgsalmon;
         color: $fontwhite;
+    }
+    .section1{
+        padding: 100px 0;
+        .abs_wavebot{
+            bottom: -1px;
+        }
     }
     .buttons{
         padding: 35px 0;
@@ -33,7 +39,6 @@ main{
     }
     .flexc{
         @include flexcolcenter;
-        margin-bottom: 50px;
 
         .faculties{
             width: 100%;
@@ -67,8 +72,18 @@ main{
         }
     }
 }
-.reuseflexc{
 
+
+
+.section2{
+    padding-bottom: 50px;
+    .abs_wavebot{
+        transform: translateY(99%);
+        bottom: 0;
+    }
+}
+
+.reuseflexc{
     .img-box{
         &.overtitleimg{
             width: 50px;
@@ -100,7 +115,7 @@ main{
 
 .upcoming_events{
     .flexc{
-        margin: 0;
+        margin-bottom: 0;
     }
     .event{
         position: relative;
@@ -133,6 +148,77 @@ main{
         .buttons{
             position: absolute;
             bottom: 0;
+            transform: translate(50%, 50%);
+            padding: 0;
+        }
+    }
+}
+
+
+.section3{
+    .white_spacing{
+        margin: 50px 0;
+        .big-img{
+            padding: 30px;
+        }
+        .descr{
+            margin-top: 80px;
+        }
+    }
+}
+.latest_courses{
+    margin-top: 50px;
+    width: 100%;
+
+    .flexc{
+        &.unset{
+            align-items: unset;
+        }
+    }
+    
+    .img-box{
+        width: 100px;
+        padding: 20px;
+    }
+
+    .course_list{
+        width: inherit;
+        .course{
+            padding: 20px;
+            .flexc{
+                align-items: center;
+            }
+            .undertitles{
+                font-size: 10px;
+                span{
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+.section4{
+    padding: 50px 0;
+}
+.input{
+    position: relative;
+    input{
+        width: 350px;
+        margin-left: 100px;
+        font-size: 12;
+        outline: none;
+    }
+    .logo_box{
+        position: absolute;
+        right: 0;
+        padding: 17px 18px;
+        border-radius: 50%;
+        background-color: $bgyellow;
+
+        i{
+            font-size: 20;
+            color: $fontwhite;
         }
     }
 }

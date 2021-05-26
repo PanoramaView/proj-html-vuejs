@@ -23,6 +23,7 @@ body{
     @media screen and (min-width: 1500px) {
         margin: auto;
         max-width: 1500px;
+        overflow-x: hidden;
     }
 }
 h1{
@@ -48,6 +49,11 @@ h4{
     font-size: $font_sizeh4;
 }
 h5{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh5;
+}
+h6{
     font-weight: lighter;
     font-family: $font_primary;
     font-size: $font_size;
