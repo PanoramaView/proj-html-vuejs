@@ -2,6 +2,7 @@
 a,
 button {
   @include default_btn;
+  white-space: nowrap;
   
   &.btnlogo{
     

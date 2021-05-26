@@ -40,10 +40,10 @@
                         <div class="nav-link">
                             <ul>
                                 <li v-for="link in navlinks">
-                                    <a href="#" :class="{yellowfont: link.name === activeNavlink.name}"
+                                    <a  :class="{yellowfont: link.name === activeNavlink.name}"
                                         @click="selectnavlink(link)">{{link.name}} </a>
                                 </li>
-                                <li><a href="#" class="yellow yellownav btnlogo" v-model="">VIEW COURSES </a> </li>
+                                <li><a  class="yellow yellownav btnlogo" v-model="">VIEW COURSES </a> </li>
 
                             </ul>
                         </div>
@@ -56,13 +56,13 @@
                                 universities, courses, secondary schools etc.
                             </div>
                             <div class="buttons flex">
-                                <a class="yellow btnlogo" href="#" role="button">
+                                <a class="yellow btnlogo"  role="button">
                                     <div class="logo_box">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
                                     Search courses
                                 </a>
-                                <a class="white btnlogo" href="#" role="button">
+                                <a class="white btnlogo"  role="button">
                                     <div class="logo_box">
                                         <i class="fa fa-user-plus" aria-hidden="true"></i>
                                     </div>
@@ -95,7 +95,7 @@
                                 thanks to the number of courses it provides.
                             </div>
                             <div class="buttons flex">
-                                <a class="yellow btnlogo" href="#" role="button">
+                                <a class="yellow btnlogo"  role="button">
                                     Browse through courses
                                 </a>
                             </div>
@@ -136,7 +136,7 @@
                                 {{activeFaculty.descr}}
                             </div>
                             <div class="buttons flex">
-                                <a class="salmon btnlogo" href="#" role="button">
+                                <a class="salmon btnlogo"  role="button">
                                     Read More
                                 </a>
                             </div>
@@ -214,7 +214,7 @@
                                     </div>
                                 </div>
                                 <div class="buttons flex">
-                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                    <a class="salmon btnlogoevent"  role="button">
                                         <div class="logo_box">
                                             <i class="fa fa-plus" aria-hidden="true"></i>
                                         </div>
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                                 <div class="buttons flex">
-                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                    <a class="salmon btnlogoevent"  role="button">
                                         <div class="logo_box">
                                             <i class="fa fa-plus" aria-hidden="true"></i>
                                         </div>
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
                                 <div class="buttons flex">
-                                    <a class="salmon btnlogoevent" href="#" role="button">
+                                    <a class="salmon btnlogoevent"  role="button">
                                         <div class="logo_box">
                                             <i class="fa fa-plus" aria-hidden="true"></i>
                                         </div>
@@ -268,7 +268,7 @@
                             </div>
                         </div>
                         <div class="buttons">
-                            <a class="yellow btnlogo" href="#" role="button">
+                            <a class="yellow btnlogo"  role="button">
                                 View All Events
                             </a>
                         </div>
@@ -308,7 +308,7 @@
                                             </div>
                                         </div>
                                         <div class="buttons flex">
-                                            <a class="salmon btnlogoevent" href="#" role="button">
+                                            <a class="salmon btnlogoevent"  role="button">
                                                 <div class="logo_box">
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                 </div>
@@ -333,7 +333,7 @@
                                             </div>
                                         </div>
                                         <div class="buttons flex">
-                                            <a class="salmon btnlogoevent" href="#" role="button">
+                                            <a class="salmon btnlogoevent"  role="button">
                                                 <div class="logo_box">
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                 </div>
@@ -358,7 +358,7 @@
                                             </div>
                                         </div>
                                         <div class="buttons flex">
-                                            <a class="salmon btnlogoevent" href="#" role="button">
+                                            <a class="salmon btnlogoevent"  role="button">
                                                 <div class="logo_box">
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                 </div>
@@ -383,7 +383,7 @@
                                             </div>
                                         </div>
                                         <div class="buttons flex">
-                                            <a class="salmon btnlogoevent" href="#" role="button">
+                                            <a class="salmon btnlogoevent"  role="button">
                                                 <div class="logo_box">
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                 </div>
@@ -408,7 +408,7 @@
                                         an influence on how students are evaluated at his/her subject.
                                     </div>
                                     <div class="buttons flex">
-                                        <a class="salmon btnlogo" href="#" role="button">
+                                        <a class="salmon btnlogo"  role="button">
                                             Discover the Method
                                         </a>
                                     </div>
@@ -437,7 +437,7 @@
                                         an influence on how students are evaluated at his/her subject.
                                     </div>
                                     <div class="buttons flex">
-                                        <a class="salmon btnlogo" href="#" role="button">
+                                        <a class="salmon btnlogo"  role="button">
                                             List of Fees
                                         </a>
                                     </div>
@@ -461,7 +461,7 @@
                                 <i class="fab fa-telegram-plane"></i>
                             </div>
                             <!-- Quando scrivi in Input compare una X -->
-                            <a href="#" class="btn-link" v-if="emailInput">
+                            <a  class="btn-link" v-if="emailInput">
                                 <i class="fas fa-times" @click.prevent="emailInput = ''"></i>
                             </a>
                         </div>
@@ -522,12 +522,16 @@
                             EduPrime is the most versatile WordPress theme for educational purposes, showcasing
                             universities, courses, secondary schools etc.
                         </div>
-                        <div class="socials">
-                            <div class="facebook">
-                                <i></i>
+                        <div class="socials flex">
+                            <div class="logo_box facebook flexc">
+                                <i class="fab fa-facebook-f"></i>
                             </div>
-                            <div class="twitter"></div>
-                            <div class="ig"></div>
+                            <div class="logo_box twitter flexc">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="logo_box ig flexc">
+                                <i class="fab fa-instagram"></i>
+                            </div>
                         </div>
                     </div>
 
@@ -537,23 +541,23 @@
                             <li class="liHead">
                                 <h3>Get EduPrime</h3>
                             </li>
-                            <li><a href="">Request a website</a></li>
-                            <li><a href="">Browse Themes</a></li>
-                            <li><a href="">Payment options</a></li>
-                            <li><a href="">Support System</a></li>
-                            <li><a href="">Checkout</a></li>
-                            <li><a href="">Purchase Theme</a></li>
+                            <li><a >Request a website</a></li>
+                            <li><a >Browse Themes</a></li>
+                            <li><a >Payment options</a></li>
+                            <li><a >Support System</a></li>
+                            <li><a >Checkout</a></li>
+                            <li><a >Purchase Theme</a></li>
                         </ol>
                         <ol>
                             <li class="liHead">
                                 <h3>Networking</h3>
                             </li>
-                            <li><a href="">Purchase Theme</a></li>
-                            <li><a href="">Our Benefits</a></li>
-                            <li><a href="">Our Team</a></li>
-                            <li><a href="">Our Services</a></li>
-                            <li><a href="">Other Products</a></li>
-                            <li><a href="">My Account</a></li>
+                            <li><a >Purchase Theme</a></li>
+                            <li><a >Our Benefits</a></li>
+                            <li><a >Our Team</a></li>
+                            <li><a >Our Services</a></li>
+                            <li><a >Other Products</a></li>
+                            <li><a >My Account</a></li>
                         </ol>
                     </div>
 
@@ -565,8 +569,9 @@
                                 <div class="logo_box flexc" @click="searchBox">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </div>
+
                                 <!-- Quando scrivi in Input compare una X -->
-                                <a href="#" class="btn-link" v-if="searchInput">
+                                <a  class="btn-link" v-if="searchInput">
                                     <i class="fas fa-times" @click.prevent="searchInput = ''"></i>
                                 </a>
                             </div>
@@ -585,6 +590,23 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+            <div class="abs_pageup">
+                <a href="#" class="logo_box">
+                    <img src="img/back-to-top-arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="abs_msg">
+                <div class="flexc">
+                    <a class="img-box">
+                        <i class="fas fa-dollar-sign"></i>
+                        Purchase Theme
+                    </a>
+                    <a class="img-box">
+                        <i class="fab fa-ethereum"></i>
+                        Related Themes
+                    </a>
                 </div>
             </div>
         </footer>
