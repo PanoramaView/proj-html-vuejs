@@ -5,24 +5,31 @@ const app = new Vue({
         navlinks: [
             {
                 name: 'Home',
+                arrow: true,
             },
             {
                 name: 'Courses',
+                arrow: true,
             },
             {
                 name: 'About Us',
+                arrow: false,
             },
             {
                 name: 'News',
+                arrow: true,
             },
             {
                 name: 'Pages',
+                arrow: true,
             },
             {
                 name: 'Contact',
+                arrow: false,
             },
             {
                 name: 'Purchase',
+                arrow: false,
             },
         ],
         activeFaculty: {},
@@ -40,10 +47,15 @@ const app = new Vue({
             setTimeout(() => this.activeFaculty = faculty,  150)
         },
         subToNewsletter(){
-            alert("You'll now receive our neasletters");
+            if(this.emailInput){
+                alert("You'll now receive our neasletters");
+            }
+            
         },
         searchBox(){
-            alert("You searched: " + this.searchInput);
+            if(this.searchInput){
+                alert("You searched: " + this.searchInput);
+            }
         }
     },
     

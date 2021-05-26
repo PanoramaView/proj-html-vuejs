@@ -29,15 +29,24 @@ header{
                             justify-self: center;
                             justify-content: center;
                             align-items: center;
-                            a:not(.yellownav){
-                                padding: 10px 20px;
+                            &.nav_tab{
+                                padding: 5px 10px;
                                 &:hover {
-                                    color: $fontsalmon;
+                                    cursor: pointer;
                                     background-color: $bgwhite;
-                                  }
-                                  &.activepage{
+                                    border-radius: 10px;
+                                    a{
+                                        color: $fontsalmon;
+                                    }
+                                }
+                                &.activepage{
                                       color: $fontyellow;
-                                  }
+                                }
+                                
+                            }
+                            i{
+                                font-size: 10;
+                                margin-left: 5px;
                             }
                         }
                     }
@@ -45,6 +54,8 @@ header{
             }
         }
     }
+
+
     .hero{
         height: 450px;
         max-width: 600px;
@@ -69,3 +80,5 @@ header{
         left: -150px;
     }
 }
+
+//hamburger

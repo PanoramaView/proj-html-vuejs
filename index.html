@@ -39,13 +39,23 @@
                         </div>
                         <div class="nav-link">
                             <ul>
-                                <li v-for="link in navlinks">
-                                    <a  :class="{yellowfont: link.name === activeNavlink.name}"
-                                        @click="selectnavlink(link)">{{link.name}} </a>
+                                <li v-for="link in navlinks" class="nav_tab"@click="selectnavlink(link)">
+                                    <a  :class="{yellowfont: link.name === activeNavlink.name}">
+                                        {{link.name}} 
+                                        <div class="img-box" v-if="link.arrow"> 
+                                            <i class="fas fa-sort-down"></i></a>
+                                        </div>
                                 </li>
                                 <li><a  class="yellow yellownav btnlogo" v-model="">VIEW COURSES </a> </li>
 
                             </ul>
+                        </div>
+
+                        <!-- BURGER -->
+                        <div class="menu-collpase">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </button>
                         </div>
                     </nav>
                     <div class="hero">
