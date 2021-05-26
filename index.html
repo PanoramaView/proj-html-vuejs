@@ -41,7 +41,8 @@
                             <ul>
                                 <li v-for="link in navlinks">
                                     <a href="#" :class="{yellowfont: link.name === activeNavlink.name}"
-                                    @click="selectnavlink(link)">{{link.name}} </a></li>
+                                        @click="selectnavlink(link)">{{link.name}} </a>
+                                </li>
                                 <li><a href="#" class="yellow yellownav btnlogo" v-model="">VIEW COURSES </a> </li>
 
                             </ul>
@@ -113,9 +114,8 @@
                             to satisfy any student's needs.
                         </div>
                         <div class="faculties flex">
-                            <div v-for="faculty in facultiesList" class="faculty-box"
-                            @click="selectfaculty(faculty)"
-                            :class="{activefaculties: activeFaculty.name === faculty.name}">
+                            <div v-for="faculty in facultiesList" class="faculty-box" @click="selectfaculty(faculty)"
+                                :class="{activefaculties: activeFaculty.name === faculty.name}">
                                 <div class="img-box">
                                     <img :src="`${faculty.img}`">
                                 </div>
@@ -164,11 +164,13 @@
                                 <div class="flex">
                                     <div class="timeline_descr flexc">
                                         <h3>Demo Classes</h3>
-                                        <div class="undertitles">In the first week, students try to accommodate with the teaching style and choose their optimal courses.</div>
+                                        <div class="undertitles">In the first week, students try to accommodate with the
+                                            teaching style and choose their optimal courses.</div>
                                     </div>
                                     <div class="timeline_descr flexc">
                                         <h3>Graduation Day</h3>
-                                        <div class="undertitles">On the day of the graduation, all students father for the ceremony and then network and party among others.</div>
+                                        <div class="undertitles">On the day of the graduation, all students father for
+                                            the ceremony and then network and party among others.</div>
                                     </div>
                                 </div>
                             </div>
@@ -179,11 +181,13 @@
                                 <div class="flex">
                                     <div class="timeline_descr flexc">
                                         <h3>Orientation</h3>
-                                        <div class="undertitles">First day of the university year, all students gather for the opening ceremony and then network with others.</div>
+                                        <div class="undertitles">First day of the university year, all students gather
+                                            for the opening ceremony and then network with others.</div>
                                     </div>
                                     <div class="timeline_descr flexc">
                                         <h3>Evaluation</h3>
-                                        <div class="undertitles">At the end of a semester, students take a general evaluation test for every subject they're learning.</div>
+                                        <div class="undertitles">At the end of a semester, students take a general
+                                            evaluation test for every subject they're learning.</div>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +208,9 @@
                                         20 May 21:30 PM
                                     </div>
                                     <div class="event_descr undertitles">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam
+                                        quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate
+                                        iure fugit, cum officia dolore eum quaerat quam eaque!
                                     </div>
                                 </div>
                                 <div class="buttons flex">
@@ -224,7 +230,9 @@
                                         24 Mar 18:00 PM
                                     </div>
                                     <div class="event_descr undertitles">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam
+                                        quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate
+                                        iure fugit, cum officia dolore eum quaerat quam eaque!
                                     </div>
                                 </div>
                                 <div class="buttons flex">
@@ -244,7 +252,9 @@
                                         12 Feb 13:30 PM
                                     </div>
                                     <div class="event_descr undertitles">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate iure fugit, cum officia dolore eum quaerat quam eaque!
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quas aperiam
+                                        quibusdam quisquam suscipit odit illum porro perferendis, tenetur, voluptate
+                                        iure fugit, cum officia dolore eum quaerat quam eaque!
                                     </div>
                                 </div>
                                 <div class="buttons flex">
@@ -281,7 +291,7 @@
                             <div class="flexc unset">
                                 <h2>Latest Courses</h2>
                                 <div class="course_list flex">
-                                    
+
                                     <div class="col-3 course flexc">
                                         <div class="flexc">
                                             <div class="img-box">
@@ -290,11 +300,11 @@
                                             <h3>Make Better Decisions</h3>
                                             <div class=" undertitles">
                                                 <i class="fa fa-user-o" aria-hidden="true"></i>
-                                                Teacher: <span>James Colins </span> 
+                                                Teacher: <span>James Colins </span>
                                             </div>
                                             <div class=" undertitles">
                                                 <i class="fa fa-money" aria-hidden="true"></i>
-                                                Price: <span>$21.00</span> 
+                                                Price: <span>$21.00</span>
                                             </div>
                                         </div>
                                         <div class="buttons flex">
@@ -306,7 +316,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-3 course flexc">
                                         <div class="flexc">
                                             <div class="img-box">
@@ -315,7 +325,7 @@
                                             <h3>How to be a speaker</h3>
                                             <div class=" undertitles">
                                                 <i class="fa fa-user-o" aria-hidden="true"></i>
-                                                Teacher: <span>James Colins </span> 
+                                                Teacher: <span>James Colins </span>
                                             </div>
                                             <div class=" undertitles">
                                                 <i class="fa fa-money" aria-hidden="true"></i>
@@ -331,7 +341,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-3 course flexc">
                                         <div class="flexc">
                                             <div class="img-box">
@@ -340,11 +350,11 @@
                                             <h3>Network Introductions</h3>
                                             <div class=" undertitles">
                                                 <i class="fa fa-user-o" aria-hidden="true"></i>
-                                                Teacher: <span>James Colins </span> 
+                                                Teacher: <span>James Colins </span>
                                             </div>
                                             <div class=" undertitles">
                                                 <i class="fa fa-money" aria-hidden="true"></i>
-                                                Price: <span>Free</span> 
+                                                Price: <span>Free</span>
                                             </div>
                                         </div>
                                         <div class="buttons flex">
@@ -356,7 +366,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-3 course flexc">
                                         <div class="flexc">
                                             <div class="img-box">
@@ -365,11 +375,11 @@
                                             <h3>Brand Management</h3>
                                             <div class=" undertitles">
                                                 <i class="fa fa-user-o" aria-hidden="true"></i>
-                                                Teacher: <span>James Colins </span> 
+                                                Teacher: <span>James Colins </span>
                                             </div>
                                             <div class=" undertitles">
                                                 <i class="fa fa-money" aria-hidden="true"></i>
-                                                Price: <span>Free</span> 
+                                                Price: <span>Free</span>
                                             </div>
                                         </div>
                                         <div class="buttons flex">
@@ -381,8 +391,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                 </div>
                             </div>
                         </div>
@@ -393,7 +403,9 @@
                                 <div class="descr col-6">
                                     <h2>The most efficient examination method</h2>
                                     <div class="undertitles">
-                                        EduPrime has gathered teachers from around the globeto brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+                                        EduPrime has gathered teachers from around the globeto brainstorm in order to
+                                        facilitate the evaluation of our students. Every teacher from our university has
+                                        an influence on how students are evaluated at his/her subject.
                                     </div>
                                     <div class="buttons flex">
                                         <a class="salmon btnlogo" href="#" role="button">
@@ -420,7 +432,9 @@
                                 <div class="descr col-6">
                                     <h2>Variable fees for international students</h2>
                                     <div class="undertitles">
-                                        EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+                                        EduPrime has gathered teachers from around the globe to brainstorm in order to
+                                        facilitate the evaluation of our students. Every teacher from our university has
+                                        an influence on how students are evaluated at his/her subject.
                                     </div>
                                     <div class="buttons flex">
                                         <a class="salmon btnlogo" href="#" role="button">
@@ -441,10 +455,15 @@
                     <div class="flex">
                         <h5>Subscribe Now to Our Newsletter !</h5>
                         <div class="input flex">
-                            <input type="text" placeholder="Email address..." id="email_input">
-                            <div class="logo_box flexc">
+                            <input type="text" placeholder="Email address..." id="email_input" v-model="emailInput"
+                                @keyup.enter="subToNewsletter" @keyup.esc="emailInput = ''">
+                            <div class="logo_box flexc" @click="subToNewsletter">
                                 <i class="fab fa-telegram-plane"></i>
                             </div>
+                            <!-- Quando scrivi in Input compare una X -->
+                            <a href="#" class="btn-link" v-if="emailInput">
+                                <i class="fas fa-times" @click.prevent="emailInput = ''"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -456,7 +475,8 @@
                     <div class="flexc">
                         <h2>Partners</h2>
                         <div class="undertitles">
-                            Leverage agile frameworks to provide a robust synopsis for high level overviews, Iterative approaches to corporate strategy.
+                            Leverage agile frameworks to provide a robust synopsis for high level overviews, Iterative
+                            approaches to corporate strategy.
                         </div>
                         <div class="partners_list flex">
                             <div class="img-box">
@@ -499,7 +519,8 @@
                             <img src="img/theme_eduprime_logo.png">
                         </div>
                         <div class="undertitles">
-                            EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.
+                            EduPrime is the most versatile WordPress theme for educational purposes, showcasing
+                            universities, courses, secondary schools etc.
                         </div>
                         <div class="socials">
                             <div class="facebook">
@@ -509,11 +530,13 @@
                             <div class="ig"></div>
                         </div>
                     </div>
-                    
+
                     <!-- Footer Links -->
                     <div class="footer_links flex col-4">
                         <ol>
-                            <li class="liHead"> <h3>Get EduPrime</h3></li>
+                            <li class="liHead">
+                                <h3>Get EduPrime</h3>
+                            </li>
                             <li><a href="">Request a website</a></li>
                             <li><a href="">Browse Themes</a></li>
                             <li><a href="">Payment options</a></li>
@@ -522,7 +545,9 @@
                             <li><a href="">Purchase Theme</a></li>
                         </ol>
                         <ol>
-                            <li class="liHead"><h3>Networking</h3></li>
+                            <li class="liHead">
+                                <h3>Networking</h3>
+                            </li>
                             <li><a href="">Purchase Theme</a></li>
                             <li><a href="">Our Benefits</a></li>
                             <li><a href="">Our Team</a></li>
@@ -535,10 +560,15 @@
                     <div class="search_section col-4">
                         <div class="flexc">
                             <div class="input flex">
-                                <input type="text" placeholder="Search..." id="email_input">
-                                <div class="logo_box flexc">
+                                <input type="text" placeholder="Search..." id="email_input" v-model="searchInput"
+                                    @keyup.esc="searchInput = ''" @keyup.enter="searchBox">
+                                <div class="logo_box flexc" @click="searchBox">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </div>
+                                <!-- Quando scrivi in Input compare una X -->
+                                <a href="#" class="btn-link" v-if="searchInput">
+                                    <i class="fas fa-times" @click.prevent="searchInput = ''"></i>
+                                </a>
                             </div>
 
                             <h6>Search categories</h6>
@@ -562,6 +592,11 @@
     <!-- My JS -->
     <script src="scripts/faculties.js"></script>
     <script src="scripts/myvue.js"></script>
+    <script>
+        window.addEventListener("load", function (event) {
+            // here is the Vue code
+        });
+    </script>
 </body>
 
 </html>

@@ -96,3 +96,29 @@ h6{
 .yellowfont{
     color: $bgyellow;
 }
+
+// x in searchbox
+.btn-link{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    right: 60px;
+    cursor: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn-link i {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

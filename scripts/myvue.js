@@ -27,6 +27,8 @@ const app = new Vue({
         ],
         activeFaculty: {},
         facultiesList: globalfacultiesList,
+        searchInput: "",
+        emailInput: "",
 
     },
 
@@ -36,6 +38,12 @@ const app = new Vue({
         },
         selectfaculty(faculty){
             setTimeout(() => this.activeFaculty = faculty,  150)
+        },
+        subToNewsletter(){
+            alert("You'll now receive our neasletters");
+        },
+        searchBox(){
+            alert("You searched: " + this.searchInput);
         }
     },
     
