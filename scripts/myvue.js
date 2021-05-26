@@ -5,31 +5,76 @@ const app = new Vue({
         navlinks: [
             {
                 name: 'Home',
+                link: '#',
+                
                 arrow: true,
+                dropdown:{
+                    home:{
+                        name:'History',
+                        name:'Location',
+                        name:'Info',
+                    }
+                },
             },
             {
                 name: 'Courses',
+                link: '#',
+                
                 arrow: true,
+                dropdown:{
+                    course: {
+                        name:'Law Faculty',
+                        name:'Economy',
+                        name:'Medicine',
+                        name:'Computer Science',
+                        name:'Graphic Design',
+                    }
+                },
             },
             {
                 name: 'About Us',
+                link: '#',
+                
                 arrow: false,
+                dropdown:{
+                    
+                },
             },
             {
                 name: 'News',
+                link: '#',
+                
                 arrow: true,
+                dropdown:{
+
+                },
             },
             {
                 name: 'Pages',
+                link: '#',
+                
                 arrow: true,
+                dropdown:{
+
+                },
             },
             {
                 name: 'Contact',
+                link: '#',
+                
                 arrow: false,
+                dropdown:{
+
+                },
             },
             {
                 name: 'Purchase',
+                link: '#',
+                
                 arrow: false,
+                dropdown:{
+
+                },
             },
         ],
         activeFaculty: {},

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "laravel-mix": "^6.0.19"
+    "@jeremyhamm/vue-slider": "^0.2.0",
+    "i": "^0.3.6",
+    "laravel-mix": "^6.0.19",
+    "npm": "^7.14.0"
   },
   "devDependencies": {
     "postcss": "^8.1.14",
