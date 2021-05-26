@@ -26,7 +26,9 @@ footer{
             a{
                 color: $fontwhiteop;
                 &:hover{
-
+                    color:$fontwhite;
+                    background-color: rgba(255, 255, 255, 0.089);
+                    border-radius: 10px;
                 }
             }
         }
@@ -45,12 +47,20 @@ footer{
                     outline: none;
                 }
                 .logo_box{
+                    border: 1px solid transparent;
                     position: absolute;
-                    right: 0;
+                    right: -1;
                     bottom: 0;
                     padding: 17px;
                     border-radius: 50%;
                     background-color: $bgyellow;
+
+                    &:hover{
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.15); 
+                        box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.15);
+                        background-color: $bgsalmon;
+                    }
                     
                     i{
                         font-size: 16;

@@ -39,14 +39,10 @@
                         </div>
                         <div class="nav-link">
                             <ul>
-                                <li><a href="#">Home </a> </li>
-                                <li><a href="#">Courses </a> </li>
-                                <li><a href="#">About Us </a> </li>
-                                <li><a href="#">News </a> </li>
-                                <li><a href="#">Pages </a> </li>
-                                <li><a href="#">Contact </a> </li>
-                                <li><a href="#">Purchase </a> </li>
-                                <li><a href="#" class="yellow yellownav btnlogo">VIEW COURSES </a> </li>
+                                <li v-for="link in navlinks">
+                                    <a href="#" :class="{yellowfont: link.name === activeNavlink.name}"
+                                    @click="selectnavlink(link)">{{link.name}} </a></li>
+                                <li><a href="#" class="yellow yellownav btnlogo" v-model="">VIEW COURSES </a> </li>
 
                             </ul>
                         </div>
@@ -117,35 +113,13 @@
                             to satisfy any student's needs.
                         </div>
                         <div class="faculties flex">
-                            <div class="faculty-box activefaculties">
+                            <div v-for="faculty in facultiesList" class="faculty-box"
+                            @click="selectfaculty(faculty)"
+                            :class="{activefaculties: activeFaculty.name === faculty.name}">
                                 <div class="img-box">
-                                    <img src="img/Gavel-v2.png" alt="">
+                                    <img :src="`${faculty.img}`">
                                 </div>
-                                <span>Law Faculty</span>
-                            </div>
-                            <div class="faculty-box">
-                                <div class="img-box">
-                                    <img src="img/Coins-tabs-v2.png" alt="">
-                                </div>
-                                <span>Economy</span>
-                            </div>
-                            <div class="faculty-box">
-                                <div class="img-box">
-                                    <img src="img/Medicine-tabs-v2.png" alt="">
-                                </div>
-                                <span>Medicine</span>
-                            </div>
-                            <div class="faculty-box">
-                                <div class="img-box">
-                                    <img src="img/Computer-tabs-v2.png" alt="">
-                                </div>
-                                <span>Computer Science</span>
-                            </div>
-                            <div class="faculty-box">
-                                <div class="img-box">
-                                    <img src="img/Palette-tabs-v2.png" alt="">
-                                </div>
-                                <span>Graphic Design</span>
+                                <span>{{faculty.name}}</span>
                             </div>
                         </div>
                     </div>
@@ -153,13 +127,13 @@
                     <div class="flex faculty_tab">
                         <div class="big-img col-6">
                             <div class="img-box">
-                                <img src="img/Gavel-Illustration-e1556884768193.png" alt="">
+                                <img :src="`${activeFaculty.bigimg}`">
                             </div>
                         </div>
                         <div class="descr col-6">
-                            <h2>Law Faculty</h2>
+                            <h2>{{activeFaculty.name}}</h2>
                             <div class="undertitles">
-                                Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but wyou will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.
+                                {{activeFaculty.descr}}
                             </div>
                             <div class="buttons flex">
                                 <a class="salmon btnlogo" href="#" role="button">
@@ -587,6 +561,7 @@
     </div>
     <!-- My JS -->
     <script src="scripts/myscripts.js"></script>
+    <script src="scripts/myvue.js"></script>
 </body>
 
 </html>
