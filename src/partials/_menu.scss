@@ -51,4 +51,34 @@
 
 #main {
   transition: margin-left .5s;
+  position: relative;
+}
+
+
+//fixed icons
+.fixed_icons{
+  position: fixed;
+  left: 0;
+  top: 400px;
+  color: $fontwhite;
+  background-color: $bgyellow;
+  -webkit-box-shadow: 2px 0px 12px 8px rgba(0,0,0,0.2); 
+  box-shadow: 2px 0px 12px 8px rgba(0,0,0,0.2);
+
+    .flexc{
+        .img-box{
+          @include flexcolcenter;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            i{
+                font-size: 14;
+            }
+            &:hover{
+              cursor: pointer;
+              color: $fontsalmon;
+              background-color: $bgwhite;
+            }
+        }
+    }
 }
