@@ -121,7 +121,7 @@
             <section class="bgwhite section1">
                 <div class="margin_page">
                     <div class="flex">
-                        <div class="descr col-6">
+                        <div class="descr col-6 s-col-12 xs-col-12">
                             <h2>Thousands of courses for any type of student</h2>
                             <div class="undertitles">
                                 At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can
@@ -135,7 +135,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="big-img col-6">
+                        <div class="big-img col-6 s-col-12 xs-col-12">
                             <div class="img-box">
                                 <img src="img/Graduation-Illustration.png" alt="">
                             </div>
@@ -160,12 +160,12 @@
                     </div>
 
                     <div class="flex faculty_tab">
-                        <div class="big-img col-6">
+                        <div class="big-img col-6 s-col-12 xs-col-12">
                             <div class="img-box">
                                 <img :src="`${activeFaculty.bigimg}`">
                             </div>
                         </div>
-                        <div class="descr col-6">
+                        <div class="descr col-6 s-col-12 xs-col-12">
                             <h2>{{activeFaculty.name}}</h2>
                             <div class="undertitles">
                                 {{activeFaculty.descr}}
@@ -235,7 +235,7 @@
                         </div>
                         <h2>Upcoming Events</h2>
                         <div class="events_list flex">
-                            <div class="col-4 event">
+                            <div class="event col-4">
                                 <div class="flexc">
                                     <h4>Coaching Sessions</h4>
                                     <div class="event_date undertitles">
@@ -257,7 +257,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-4 event">
+                            <div class="event col-4 ">
                                 <div class="flexc">
                                     <h4>Coaching Sessions</h4>
                                     <div class="event_date undertitles">
@@ -279,7 +279,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-4 event">
+                            <div class="event col-4 ">
                                 <div class="flexc">
                                     <h4>Coaching Sessions</h4>
                                     <div class="event_date undertitles">
@@ -435,7 +435,7 @@
                         <!-- The most efficient examination method -->
                         <div class="examination_method white_spacing">
                             <div class="flex">
-                                <div class="descr col-6">
+                                <div class="descr col-6 col-6 s-col-12 xs-col-12">
                                     <h2>The most efficient examination method</h2>
                                     <div class="undertitles">
                                         EduPrime has gathered teachers from around the globeto brainstorm in order to
@@ -448,7 +448,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="big-img col-6">
+                                <div class="big-img col-6 col-6 s-col-12 xs-col-12">
                                     <div class="img-box">
                                         <img src="img/Exam-Illustration.png" alt="">
                                     </div>
@@ -459,12 +459,12 @@
                         <!-- Variable fees for international students -->
                         <div class="variable_fees white_spacing">
                             <div class="flex">
-                                <div class="big-img col-6">
+                                <div class="big-img col-6 col-6 s-col-12 xs-col-12">
                                     <div class="img-box">
                                         <img src="img/Girl-Illustration.png" alt="">
                                     </div>
                                 </div>
-                                <div class="descr col-6">
+                                <div class="descr col-6 col-6 s-col-12 xs-col-12">
                                     <h2>Variable fees for international students</h2>
                                     <div class="undertitles">
                                         EduPrime has gathered teachers from around the globe to brainstorm in order to
@@ -488,8 +488,10 @@
             <section class="bgsalmon section4">
                 <div class="margin_page">
                     <div class="flex">
-                        <h5>Subscribe Now to Our Newsletter !</h5>
-                        <div class="input flex">
+                        <div class="col-7 m-col-8 s-col-12 xs-col-12">
+                            <h5>Subscribe Now to Our Newsletter !</h5>
+                        </div>
+                        <div class="input flex col-5 m-col-4 s-col-12 xs-col-12">
                             <input type="text" placeholder="Email address..." id="email_input" v-model="emailInput"
                                 @keyup.enter="subToNewsletter" @keyup.esc="emailInput = ''">
                             <div class="logo_box flexc" @click="subToNewsletter">
@@ -636,11 +638,11 @@
                 <div class="flexc">
                     <a class="img-box">
                         <i class="fas fa-dollar-sign"></i>
-                        Purchase Theme
+                        <span>Purchase Theme</span> 
                     </a>
                     <a class="img-box">
                         <i class="fab fa-ethereum"></i>
-                        Related Themes
+                        <span>Related Themes</span> 
                     </a>
                 </div>
             </div>

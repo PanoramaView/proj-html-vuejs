@@ -20,9 +20,20 @@ main{
         .abs_wavebot{
             bottom: -1px;
         }
+        .flex{
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 651px) and (max-width: 960px){
+            .buttons{
+                justify-content: center;
+            }
+        }
     }
     .buttons{
         padding: 35px 0;
+    }
+    .big-img{
+        margin: auto;
     }
 
     //dedicated
@@ -80,6 +91,7 @@ main{
     .faculty_tab{
         .big-img{
             padding: 0 85px;
+            
         }
     }
 }
@@ -112,6 +124,17 @@ main{
         .down{
             margin-right: $timeline_descr_margin;
         }
+        @media screen and (max-width: 960px){
+            .flex{
+                flex-wrap: nowrap;
+            }
+            .timeline_descr{
+
+            }
+            .undertitles{
+                display: none;
+            }
+        }
         .timeline_descr{
             margin: 0;
             padding: 30px;
@@ -126,6 +149,13 @@ main{
 .upcoming_events{
     .flexc{
         margin-bottom: 0;
+    }
+    .events_list{
+        @media screen and (max-width: 960px){
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: space-around;
+        }
     }
     .event{
         position: relative;
@@ -175,6 +205,11 @@ main{
             margin-top: 80px;
         }
     }
+    @media screen and (min-width: 651px) and (max-width: 960px){
+        .buttons{
+            justify-content: center;
+        }
+    }
 }
 .latest_courses{
     margin-top: 50px;
@@ -193,6 +228,7 @@ main{
 
     .course_list{
         width: inherit;
+        white-space: nowrap;
         .course{
             padding: 20px;
             .flexc{
@@ -209,12 +245,13 @@ main{
 }
 
 .section4{
-
+    .flex{
+        flex-wrap: wrap;
+    }
     .input{
         position: relative;
         input{
-            width: 350px;
-            margin-left: 100px;
+            width: 100%;
             font-size: 12;
             outline: none;
         }

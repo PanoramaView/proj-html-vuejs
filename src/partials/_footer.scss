@@ -160,13 +160,19 @@ footer{
         @include flexcolcenter;
         .img-box{
             margin: 5px;
-            padding: 8px 30px 8px 15px;
+            padding: 8px 15px;
             border-radius: 5px;
             background-color: $fontdarkgrey;
             i{
                 color: $fontgreen;
                 margin-right: 3px;
                 font-size: 15;
+            }
+            span{
+                display: none;
+                @media screen and (min-width: 1200px) {
+                    display: unset;
+                }
             }
         }
     }

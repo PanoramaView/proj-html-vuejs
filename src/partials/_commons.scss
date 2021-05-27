@@ -26,6 +26,8 @@ body{
         overflow-x: hidden;
     }
 }
+
+
 h1{
     font-weight: lighter;
     font-size: $font_sizeh1;
@@ -59,13 +61,6 @@ h6{
     font-size: $font_sizeh6;
 }
 
-.margin_page{
-    margin: 0 200px;
-    @media screen and (min-width: 1500px) {
-      margin: auto;
-      max-width: 1200px;
-    }
-}
 .undertitles{
     font-family: $font_secondary;
     font-size: $font_sizeutmain;
