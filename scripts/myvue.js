@@ -6,73 +6,87 @@ const app = new Vue({
             {
                 name: 'Home',
                 link: '#',
-                
+
                 arrow: true,
-                dropdown:{
-                    home:{
-                        name:'History',
-                        name:'Location',
-                        name:'Info',
-                    }
-                },
+                show: false,
+                dropdown: [{
+                    name: 'History'
+                },{
+                    name: 'Location'
+                },{
+                    name: 'Info', 
+                }],
             },
             {
                 name: 'Courses',
                 link: '#',
-                
+
                 arrow: true,
-                dropdown:{
-                    course: {
-                        name:'Law Faculty',
-                        name:'Economy',
-                        name:'Medicine',
-                        name:'Computer Science',
-                        name:'Graphic Design',
-                    }
-                },
+                show: false,
+                dropdown: [{
+                    name: 'Law Faculty'
+                },{
+                    name: 'Economy'
+                },{
+                    name: 'Medicine'
+                },{
+                    name: 'Computer Science'
+                },{
+                    name: 'Graphic Design'
+                }],
             },
             {
                 name: 'About Us',
                 link: '#',
-                
+
                 arrow: false,
-                dropdown:{
-                    
+                dropdown: {
+
                 },
             },
             {
                 name: 'News',
                 link: '#',
-                
-                arrow: true,
-                dropdown:{
 
-                },
+                arrow: true,
+                dropdown: [{
+                    name: 'Latest'
+                },{
+                    name: 'Students'
+                },{
+                    name: 'Results'
+                }],
             },
             {
                 name: 'Pages',
                 link: '#',
-                
-                arrow: true,
-                dropdown:{
 
-                },
+                arrow: true,
+                dropdown: [{
+                    name: 'Student Portal'
+                },{
+                    name: 'Subscribe'
+                },{
+                    name: 'Webinary'
+                },{
+                    name: 'Crypto'
+                }],
             },
             {
                 name: 'Contact',
                 link: '#',
-                
+
                 arrow: false,
-                dropdown:{
+                dropdown: {
 
                 },
             },
             {
                 name: 'Purchase',
                 link: '#',
-                
+
                 arrow: false,
-                dropdown:{
+                dropdown: {
 
                 },
             },
@@ -84,29 +98,42 @@ const app = new Vue({
 
     },
 
-    methods:{
-        selectnavlink(link){
-            setTimeout(() => this.activeNavlink = link,  150)
+    methods: {
+        Startselectnavlink(link) {
+            setTimeout(() => {
+                this.activeNavlink = link;
+            }, 150)
         },
-        selectfaculty(faculty){
-            setTimeout(() => this.activeFaculty = faculty,  150)
+        selectnavlink(link) {
+            setTimeout(() => {
+                this.activeNavlink = link;
+                this.navlinks.forEach(x => {
+                    x.show = false;
+                });
+                if(link.arrow){
+                    link.show = true;
+                }
+            }, 150)
         },
-        subToNewsletter(){
-            if(this.emailInput){
+        selectfaculty(faculty) {
+            setTimeout(() => this.activeFaculty = faculty, 150)
+        },
+        subToNewsletter() {
+            if (this.emailInput) {
                 alert("You'll now receive our neasletters");
             }
-            
+
         },
-        searchBox(){
-            if(this.searchInput){
+        searchBox() {
+            if (this.searchInput) {
                 alert("You searched: " + this.searchInput);
             }
         }
     },
-    
-    mounted(){
+
+    mounted() {
         this.selectfaculty(this.facultiesList[0]);
-        this.selectnavlink(this.navlinks[0]);
-        
+        this.Startselectnavlink(this.navlinks[0]);
+
     },
 })
