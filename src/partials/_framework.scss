@@ -1,0 +1,26 @@
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 5* $i;
+        width: calc((100%/12) * #{$i});
+        max-width: calc((100%/12) * #{$i});
+    }
+}
+
+@media screen and (max-width: 1010px){
+    @for $i from 1 through 12 {
+        .m-col-#{$i} {
+            width: 5* $i;
+            width: calc((100%/12) * #{$i});
+            max-width: calc((100%/12) * #{$i});
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    @for $i from 1 through 12 {
+        .s-col-#{$i} {
+            width: 5* $i;
+            width: calc((100%/12) * #{$i});
+            max-width: calc((100%/12) * #{$i});
+        }
+    }
+}

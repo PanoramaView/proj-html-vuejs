@@ -6,7 +6,6 @@ header{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-width: 1000px;
         .salmonlayer{
             background-color: $bgsalmonop;
             nav{
@@ -15,9 +14,9 @@ header{
                 display: flex;
                 align-items: center;
                 .nav-logo{
-                    flex: 1;
+                    flex: 1 0 auto;
                     .img-box{
-                        width: 220px;
+                        max-width: 220px;
                     }
                 }
                 .nav-link{
@@ -86,9 +85,6 @@ header{
     }
 }
 
-//hamburger
-
-
 //dropdown
 .nav_tab{
     position: relative;
@@ -151,5 +147,41 @@ header{
         a{
             color: $fontsalmon;
         }
+    }
+}
+
+//menu hamburger
+.menu-collapse{
+    display: none;
+    button{
+        background-color: $bgmenu;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 30;
+        color: $fontwhite;
+        padding: 8px 10px;
+        margin-left: 20px;
+        &:hover{
+
+            -webkit-box-shadow: 1px 2px 12px 1px rgba(0,0,0,0.5); 
+            box-shadow: 1px 2px 12px 1px rgba(0,0,0,0.5);
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 1010px){
+    .menu-collapse{
+        display: unset;
+    }
+    .nav_tab{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 650px){
+    .nav-link{
+        display: none !important;
     }
 }

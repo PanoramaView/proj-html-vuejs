@@ -83,13 +83,6 @@ h6{
     bottom: 0;
 }
 
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        width: 5* $i;
-        width: calc((100%/12) * #{$i});
-        max-width: calc((100%/12) * #{$i});
-    }
-}
 .text-center{
     text-align: center;
 }
@@ -125,3 +118,4 @@ h6{
 html{
     scroll-behavior: smooth;
 }
+

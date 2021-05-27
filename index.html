@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" id="main">
         <header>
             <div class="backgroundimg">
                 <div class="salmonlayer">
@@ -48,8 +48,7 @@
                                         </a>
                                     </button>
                                     <!-- dropdown -->
-                                    <div class="dropdown"
-                                    v-if="x.show">
+                                    <div class="dropdown" v-if="x.show">
                                         <ul>
                                             <li v-for="y in x.dropdown">
                                                 <a>{{y.name}}</a>
@@ -62,12 +61,26 @@
                             </ul>
                         </div>
 
-                        <!-- BURGER
-                        <div class="menu-collpase">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!-- BURGER -->
+                        <div class="menu-collapse"
+                         onclick="openNav()">
+                            <button type="button" class="navbar-toggle collapsed">
                                 <i class="fas fa-bars"></i>
                             </button>
-                        </div> -->
+                        </div>
+
+                        <!-- menu -->
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <!-- Quando scrivi in Input compare una X -->
+                                <div class="img-box">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </a>
+                            <a v-for="x in navlinks">{{x.name}}</a>
+                        </div>
+
+                        
 
                     </nav>
                     <div class="hero">
@@ -636,7 +649,7 @@
     <!-- My JS -->
     <script src="scripts/faculties.js"></script>
     <script src="scripts/myvue.js"></script>
-    <script src="https://unpkg.com/@jeremyhamm/vue-slider"></script>
+    <script src="scripts/myscripts.js"></script>
 
 </body>
 
